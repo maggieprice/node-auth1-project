@@ -47,8 +47,8 @@ const sessionConfig = {
 
 
 
-server.use("/auth", authRouter);
-server.use("/users", restricted, usersRouter);
+server.use("/api/auth", authRouter);
+server.use("/api/users", restricted, usersRouter);
 
 server.get("/", (req, res) => {
   res.json({ api: "It's alive" });
